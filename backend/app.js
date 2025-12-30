@@ -4,6 +4,7 @@ const cors = require('cors');
 const { exec } = require('child_process');
 const path = require('path');
 const db = require('./models');
+const { initBackupService } = require('./services/backupService');
 
 // 2. 创建Express应用实例
 const app = express();
@@ -96,9 +97,12 @@ async function initializeServer() {
     
     // 2. 执行数据库迁移
     await runMigrations();
+
+    // 3. 初始化数据库备份服务
+    initBackupService();
     
-    // 3. 启动服务器
-    const PORT = process.env.PORT || 5000;
+    // 4. 启动服务器
+    const PORT = process.env.PORT || 5001;
     app.listen(PORT, () => {
       console.log(`服务器已启动，端口: ${PORT}`);
       console.log('数据库已同步，服务器准备就绪');

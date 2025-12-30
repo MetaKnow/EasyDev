@@ -112,7 +112,8 @@ const SearchPanel = ({ onClose, onTaskSelect }) => {
               padding: '8px 12px',
               border: '1px solid #d9d9d9',
               borderRadius: '4px',
-              fontSize: '14px'
+              fontSize: '14px',
+              boxSizing: 'border-box'
             }}
           />
         </div>
@@ -129,7 +130,8 @@ const SearchPanel = ({ onClose, onTaskSelect }) => {
               padding: '8px 12px',
               border: '1px solid #d9d9d9',
               borderRadius: '4px',
-              fontSize: '14px'
+              fontSize: '14px',
+              boxSizing: 'border-box'
             }}
           >
             <option value="">无</option>
@@ -150,7 +152,8 @@ const SearchPanel = ({ onClose, onTaskSelect }) => {
               padding: '8px 12px',
               border: '1px solid #d9d9d9',
               borderRadius: '4px',
-              fontSize: '14px'
+              fontSize: '14px',
+              boxSizing: 'border-box'
             }}
           >
             <option value="">无</option>
@@ -171,7 +174,8 @@ const SearchPanel = ({ onClose, onTaskSelect }) => {
               padding: '8px 12px',
               border: '1px solid #d9d9d9',
               borderRadius: '4px',
-              fontSize: '14px'
+              fontSize: '14px',
+              boxSizing: 'border-box'
             }}
           >
             <option value="">无</option>
